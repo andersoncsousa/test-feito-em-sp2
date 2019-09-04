@@ -1,0 +1,33 @@
+@media screen and (max-width: 575.98px){
+    .box-home-p{
+        font-size: 0.8rem !important;
+        color: blue !important;
+    }
+    .btn-regioes {
+        font-size: 1rem !important;
+        padding: 1% !important;
+    }
+    .btn-form1 {
+        margin-top:10px !important;
+        border-top-right-radius: 0.25rem !important;
+        border-bottom-right-radius: .25rem !important;
+    }
+    .btn-form2 {
+        margin-top:10px !important;
+        border-top-left-radius: 0.25rem !important;
+        border-bottom-left-radius: .25rem !important; 
+    }
+    .participantes h2 {
+        font-size: 2.5rem !important;
+    }
+    div.row.forms {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    .info-feito{
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 768.98px){
+}

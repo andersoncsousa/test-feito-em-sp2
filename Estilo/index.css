@@ -1,0 +1,759 @@
+@charset "UTF-8";
+
+/* Autor: Caique Sousa */
+@font-face {
+    font-family: GothamBook;
+    src: url(../fonts/GOTHAN/GothamBook.ttf)
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+[data-anime=left] {
+    transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime=right] {
+    transform: translate3d(100px, 0, 0);
+}
+
+[data-anime=top] {
+    transform: translate3d(0, -100px, 0);
+}
+
+[data-anime=bottom] {
+    transform: translate3d(0, 100px, 0);
+}
+
+[data-anime=front] {
+    transform: translate3d(0, 0, 150px);
+}
+
+[data-anime=back] {
+    transform: translate3d(0, 0, -150px);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+body{
+    font-family: GothamBook, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    background-image: url(../assets/backgrounds/novocabecalho.png);
+    background-attachment: fixed;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* padding-top: 188px; */
+    /* padding-bottom: 80px; */
+    top: 0;
+    display: block;
+    position: fixed;
+    z-index: 9999999;
+}
+
+/* sobreescrevendo css*/
+.fa,
+.fas {
+    padding-top: 3px;
+}
+
+.col-md-12 {
+    padding: 0;
+}
+
+.espace-modal {
+    padding: 2%;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Estilo NavBar */
+/* .img-logo-menu {
+    width: 100%;
+    max-width: 120px;
+    display: block;
+    position: absolute;
+    top: 0;
+    margin-top: 3px;
+}
+
+.navbar-brand {
+    display: block;
+} */
+
+.navbar {
+    z-index: 9999999;
+    background-color: #000000;
+    margin-top: 250px;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    /* border-right: 2px solid #fff; */
+}
+
+.nav-item a {
+    font-family: GothamBook, sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+    scroll-behavior: smooth;
+}
+
+.nav-item a:hover {
+    color: #698f5b;
+    font-weight: 700;
+}
+
+.nav-item a:active {
+    color: #698f5b;
+}
+
+/* sobre escrevendo css */
+
+.navbar-toggler {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+}
+
+.navbar-toggler-icon {
+    padding-top: 3px;
+    color: white;
+    font-weight: 900;
+}
+
+/* Fim NavBar */
+
+/* Estilo Home */
+.home {
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/backgrounds/home.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 140px;
+    padding-bottom: 80px;
+}
+
+
+.box-home h1 {
+    font-family: GothamBook, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    width: 75%;
+    /* max-width: 700px; */
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 2.5rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.box-home span {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+/* .box-home p {
+    font-family: GothamBook, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    width: 75%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+} */
+
+/* Fim Home */
+
+/* Estilo circuito */
+.circuito {
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/backgrounds/etapas.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+    padding-bottom: 60px;
+}
+
+.circuito h2 {
+    font-family: GothamBook, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+    text-shadow: 5px 5px 5px #000000;
+}
+
+.box-circuito p {
+    font-family: GothamBook, sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+    color: #000000;
+    /* max-width: 530px; */
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: block;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.info-feito{
+    width: 100%;
+    display: block;
+    /* justify-content: flex-start; */
+}
+
+.circuito-mapa1 img{
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    /* box-shadow: 10px 5px 5px black; */
+}
+
+.circuito-mapa1{
+    margin: 0 auto;
+}
+
+.btn-toolbar {
+    margin: 0 auto;
+}
+
+.name-regioes{
+    font-family: GothamBook, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.btn-regioes {
+    font-family: GothamBook, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+}
+
+.btn-group-regioes{
+    display: block;
+}
+
+.btn-regioes-2{
+    background-color: #ec9490;
+}
+
+.btn-regioes-3{
+    background-color: #ccb3c1;
+}
+
+.btn-regioes-4{
+    background-color: #ee5074;
+}
+
+.btn-regioes-5{
+    background-color: #f3dba3;
+}
+
+.btn-regioes-6{
+    background-color: #0092d6;
+}
+
+.btn-regioes-8{
+    background-color: #f9ef25;
+}
+
+.btn-regioes-9{
+    background-color: #f5a437;
+}
+
+.btn-regioes-10{
+    background-color: #cdc5dc;
+}
+
+.btn-regioes-11{
+    background-color: #e82746;
+}
+
+.btn-regioes-12{
+    background-color: #bacf6a;
+}
+
+.btn-regioes-13{
+    background-color: #feca24;
+}
+
+.btn-regioes-15{
+    background-color: #188367;
+}
+
+.btn-regioes-16{
+    background-color: #87d1ef;
+}
+
+.btn-regioes-17{
+    background-color: #00a152;
+}
+
+.btn-regioes-18{
+    background-color: #f3dadf;
+}
+
+.modal-2-10{
+    background-image: url(../assets/backgrounds/etapas-background/SAO\ CARLOS.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.list-2-10{
+    padding-left: 10px;
+    color: black;
+    text-shadow: 2px 2px 4px black;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* Fim circuito */
+
+/* Estilo Shows */
+.shows {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/backgrounds/SHOWS.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+    padding-bottom: 130px;
+}
+
+.shows h2 {
+    font-family: GothamBook, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+    text-shadow: 5px 5px 5px #000000;
+}
+
+.box-shows p {
+    font-family: GothamBook, sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+    color: #000000;
+    /* max-width: 530px; */
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 15px;
+    width: 75%;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+/* Fim Shows */
+
+/* Participantes */
+.participantes {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/backgrounds/participantes.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+    padding-bottom: 130px;
+}
+
+.participantes h2 {
+    font-family: GothamBook, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+    text-shadow: 5px 5px 5px #000000;
+}
+
+.box-participantes p {
+    font-family: GothamBook, sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+    color: #000000;
+    /* max-width: 530px; */
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 50%;
+    padding: 15px;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+/* Fim participantes */
+
+/* Estilo chefs */
+.chefs {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/backgrounds/chefs.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+    padding-bottom: 130px;
+}
+
+.chefs h2 {
+    font-family: GothamBook, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+    text-shadow: 5px 5px 5px #000000;
+}
+
+.box-chefs-p {
+    font-family: GothamBook, sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+    color: #000000;
+    /* max-width: 530px; */
+    width: 75%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 15px;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+.card-chefs{
+    width: 100%;
+    max-width: 500px;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+}
+
+/* Fim chefs */
+
+/* Estilo inscricao */
+.inscricao {
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/backgrounds/inscricao.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+}
+
+.inscricao h2 {
+    font-family: GothamBook, sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 5px #000000;
+}
+
+.box-inscricao p {
+    font-family: GothamBook, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 600;
+    color: #000000;
+    width: 75%;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+
+div.row.forms {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    justify-content: center;
+}
+
+.form-restaurante button {
+    display: block;
+    margin: 0 auto;
+    background-color: #000000;
+    border: 3px solid #f2f2f2;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.form-produtor button {
+    display: block;
+    margin: 0 auto;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 700;
+    border: 3px solid #f2f2f2;
+    font-size: 1.5rem;
+}
+
+.form-produtor button:hover {
+    background-color: #f2f2f2;
+    color: #000000;
+    border-color: #f2f2f2;
+}
+
+.form-restaurante button:hover {
+    background-color: #f2f2f2;
+    color: #000000;
+    border-color: #f2f2f2;
+}
+
+.form-produtor button:active {
+    background-color: #f2f2f2;
+    color: #000000;
+    border-color: #f2f2f2;
+}
+
+.form-restaurante button:active {
+    background-color: #f2f2f2;
+    color: #000000;
+    border-color: #f2f2f2;
+}
+
+.btn-regulamento a{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.btn-regulamento a:hover{
+    color: #000000;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active {
+    background-color: #f2f2f2;
+    color: #000000;
+    border-color: #f2f2f2;
+}
+
+.inscricao form {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+}
+
+.inscricao form label {
+    font-family: GothamBook, sans-serif;
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.inscricao form .form-control {
+    color: #000000;
+    font-weight: 700;
+    border: 1px solid #f2f2f2;
+}
+
+.inscricao form .file-name {
+    color: #000000;
+}
+
+.inscricao form .btn-primary {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #ffffff;
+    font-weight: 700;
+}
+
+.inscricao form .btn-primary:hover {
+    background-color: #f2f2f2;
+    border-color: #ffffff;
+    color: #000000;
+    font-weight: 700;
+}
+
+.inscricao form .form-check-input {
+    margin-top: 0.5rem;
+}
+
+.custom-file-label::after {
+    content: "Procurar";
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.custom-file-label {
+    border: 1px solid #f2f2f2;
+}
+
+input[type=text]::placeholder {
+    color: #000000;
+}
+
+input[type=email]::placeholder {
+    color: #000000;
+}
+
+.modal {
+    z-index: 10599990;
+}
+
+.modal-title {
+    font-family: GothamBook, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: #000000;
+}
+
+.close {
+    opacity: 1;
+    border: 0;
+}
+
+.close button {
+    border: 0;
+}
+
+.fade {
+    transition: opacity .25s linear;
+}
+
+.btn-form1 {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.btn-form2 {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* redes sociais */
+.social-media {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom:50px;
+}
+
+.social-media h5 {
+    font-family: GothamBook, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 100%;
+    max-width: 65px;
+    display: block;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.social-icon:hover {
+    border: 3px solid #f2f2f2;
+    border-radius: 10px;
+}
+
+.social-icon-box {
+    margin: 0 auto;
+}
+
+.title-fold {
+    font-family: GothamBook, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+/* Fim inscricao */
+
+/* Footer */
+footer{
+    background-color: #000000;
+}
+
+.assinatura p{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+/* Fim Footer */

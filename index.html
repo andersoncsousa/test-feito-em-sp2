@@ -1,0 +1,742 @@
+<!-- Autor: Caique Sousa  -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- style -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Estilo/index.css">
+    <link rel="stylesheet" media="(max-width:575.98px)" href="./Estilo/media-queri.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- <link rel="shortcut icon" href="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/favicon-farofa.png" type="image/x-icon" /> -->
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="includes/upload/jquery-1.4.2.min.js"></script>
+
+    <title>Feito em SP</title>
+
+</head>
+<!-- <script>
+$(function()
+	{
+		$( "#link" ).click(function(e)
+		{
+		  $("#content").load("http://www.comunicacao.sp.gov.br/wp-content/uploads/2019/03/topo-basico-preto.html");
+		  e.preventDefault();
+		});
+	});
+</script> -->
+
+<body>
+    <!-- <header>
+            <a id="link" href="#">Link</a>
+            <div id="content"><div>
+        <div id="content" wm-link="http://www.comunicacao.sp.gov.br/wp-content/uploads/2019/03/topo-basico-preto.html" wm-destino=".menu-gov" class="menu-gov">
+
+        </div>
+    </header> -->
+    <!-- Nav menu -->
+    <a href="http://www.saopaulo.sp.gov.br/" target="_blank">
+        <header></header>
+    </a>
+    <nav class="navbar fixed-top navbar-expand-lg" role="navigation">
+        <!-- <a class="navbar-brand" href="#">
+            <img class="nav-home-icon img-logo-menu" alt="Feito em SP"
+                src="assets\wetransfer-2f6985\TELAS FINAIS\Logo_Feito em_Sao_Paulo\PNG\logo_Feito_em_SaoPaulo_cor.png">
+        </a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#circuito">Circuito<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#shows">Shows<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#participantes">Participantes<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#chefs">Chefs<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link border-0" href="#inscricao">Inscrição<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Fim Nav menu -->
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="box-home">
+            <h1 class="shadow" data-anime="bottom">
+                <span>O Estado de São Paulo se prepara para o maior festival de culinária 
+                        do Brasil, durante todo mês de Outubro, em todas as regiões do estado.<br><br>
+                </span>
+                <strong>O EVENTO</strong> - O Feito em São Paulo é um festival que valoriza os pratos e
+                produtos emblemáticos da gastronomia do Estado, com eliminatórias em 15
+                macroregiões. Ao final do circuito, acontecerá a grande final do evento na
+                capital paulista, <strong>de 24 a 27 de Outubro</strong>, no Memorial da América Latina, onde
+                produtos e pratos de cada macroregião serão vendidos a um público estimado
+                de <b>70 mil pessoas</b>.<br><br>
+                Além disso, cada etapa contará com a presença de um chef de cozinha
+                reconhecido nacionalmente, que ensinará técnicas e receitas com produtos
+                regionais.<br><br>
+                E fica ainda melhor! Unindo cultura e gastronomia, grandes nomes da música
+                popular brasileira se apresentarão em cada uma dessas regiões.
+            </h1>
+            <p class="box-home-p shadow" data-anime="bottom">
+            </p>
+        </div>
+    </section>
+
+    <!-- circuito -->
+    <section class="circuito" id="circuito">
+        <div class="box-circuito">
+            <h2>Circuito</h2>
+            <p class="shadow" data-anime="top">
+                Descubra aqui a qual macrorregião você pertence.
+            </p>
+        </div>
+        <div class="info-feito">
+            <div class="row">
+                <div class="circuito-mapa1">
+                    <img  src="assets\mapa-do-circuito.png" alt=""/>
+                </div>
+            </div>
+            <!-- <div class="btn-group-regioes col mt-2 mb-3">
+                <button type="button" class="btn btn-dark btn-regioes btn-regioes-2" data-toggle="modal" data-target="#modal-2-10">02/10</button>
+                <label class="name-regioes" for="modal-2-10">São Carlos</label>
+
+                <button type="button" class="btn btn-dark btn-regioes btn-regioes-3" data-toggle="modal" data-target="#modal-3-10">03/10</button>
+                <label class="name-regioes" for="modal-3-10">Ribeirão Preto</label>
+
+                <button type="button" class="btn btn-dark btn-regioes btn-regioes-4" data-toggle="modal" data-target="#modal-4-10">04/10</button>
+                <label class="name-regioes" for="modal-4-10">Franca</label>
+
+                <button type="button" class="btn btn-dark btn-regioes btn-regioes-5" data-toggle="modal" data-target="#modal-5-10">05/10</button>
+                <label class="name-regioes" for="modal-5-10">Barretos</label>
+
+                <button type="button" class="btn btn-dark btn-regioes btn-regioes-6" data-toggle="modal" data-target="#modal-26-10">06/10</button>
+                <label class="name-regioes" for="modal-6-10">São José do Rio Preto</label>
+            </div> -->
+
+                <!-- <button type="button" class="btn btn-dark btn-regioes btn-regioes-3">03/10</button>
+                <button type="button" class="btn btn-dark btn-regioes btn-regioes-4">04/10</button>
+                <button type="button" class="btn btn-dark btn-regioes btn-regioes-5">05/10</button>
+                <button type="button" class="btn btn-dark btn-regioes btn-regioes-6">06/10</button> -->
+            <!-- <div class="row mt-2 mb-3">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group" role="group" aria-label="Second group">
+                        <button type="button" class="btn btn-dark btn-regioes btn-regioes-8">08/10</button>
+                        <button type="button" class="btn btn-dark btn-regioes btn-regioes-9">09/10</button>
+                        <button type="button" class="btn btn-dark btn-regioes btn-regioes-10">10/10</button>
+                        <button type="button" class="btn btn-dark btn-regioes btn-regioes-11">11/10</button>
+                        <button type="button" class="btn btn-dark btn-regioes btn-regioes-12">12/10</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2 mb-3">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group" role="group" aria-label="Third group">
+                        <button type="button" class="btn btn-dark btn-regioes btn-regioes-13">13/10</button>
+                        <button type="button" class="btn btn-dark btn-regioes btn-regioes-15">15/10</button>
+                        <button type="button" class="btn btn-dark btn-regioes btn-regioes-16">16/10</button>
+                        <button type="button" class="btn btn-dark btn-regioes btn-regioes-17">17/10</button>
+                        <button type="button" class="btn btn-dark btn-regioes btn-regioes-18">18/10</button>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="modal fade" id="modal-2-10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Etapa 02/10</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-2-10 modal-body">
+                            <div class="row">
+                                <ul class="list-2-10">
+                                    <li>Américo Brasiliense</li>
+                                    <li>Araraquara</li>
+                                    <li>Boa Esperança do Sul</li>
+                                    <li>Borborema</li>
+                                    <li>Cândido Rodrigues</li>
+                                    <li>Descalvado</li>
+                                    <li>Dobrada</li>
+                                    <li>Dourado</li>
+                                    <li>Fernando Prestes</li>
+                                    <li>Gavião Peixoto</li>
+                                    <li>Ibaté</li>
+                                    <li>Ibitinga</li>
+                                    <li>Itápolis</li>
+                                    <li>Matão</li>
+                                    <li>Motuca</li>
+                                    <li>Nova Europa</li>
+                                    <li>Porto Ferreira</li>
+                                    <li>Ribeirão Bonito</li>
+                                    <li>Rincão</li>
+                                    <li>Santa Ernestina</li>
+                                    <li>Santa Lúcia</li>
+                                    <li>Santa Rita do Passa Quatro</li>
+                                    <li>São Carlos</li>
+                                    <li>Tabatinga</li>
+                                    <li>Taquaritinga</li>
+                                    <li>Trabiju</li>
+                                </ul>
+                            </div>
+                            <label for="select">São Carlos:</label>
+
+                            <select id="select">
+                                <option value="">--Selecionae sua cidade--</option>
+                                <option value="Américo Brasiliense"></option>
+                                <option value="Araraquara"></option>
+                                <option value="Boa Esperança do Sul"></option>
+                                <option value="Borborema"></option>
+                                <option value="Cândido Rodrigues"></option>
+                                <option value="Descalvado"></option>
+                                <option value="Dobrada"></option>
+                                <option value="Dourado"></option>
+                                <option value="Fernando Prestes"></option>
+                                <option value="Gavião Peixoto"></option>
+                                <option value="Ibaté"></option>
+                                <option value="Ibitinga"></option>
+                                <option value="Itápolis"></option>
+                                <option value="Matão"></option>
+                                <option value="Motuca"></option>
+                                <option value="Nova Europa"></option>
+                                <option value="Porto Ferreira"></option>
+                                <option value="Ribeirão Bonito"></option>
+                                <option value="Rincão"></option>
+                                <option value="Santa Ernestina"></option>
+                                <option value="Santa Lúcia"></option>
+                                <option value="Santa Rita do Passa Quatro"></option>
+                                <option value="São Carlos"></option>
+                                <option value="Tabatinga"></option>
+                                <option value="Taquaritinga"></option>
+                                <option value="Trabiju"></option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="info-feito">
+            <div class="row">
+                <div class="circuito-mapa1">
+                    <a href="#" class="btn btn-link" data-toggle="modal" data-target="#modalExemplo">
+                        <img  src="assets\wetransfer-2f6985\TELAS FINAIS\ETAPAS MAPA\FRANCA-01.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Etapa XX/XX</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Shows -->
+    <section class="shows" id="shows">
+        <div class="box-shows">
+            <h2>Shows</h2>
+            <p class="shadow" data-anime="left">
+                A união perfeita: música + gastronomia. Os grandes nomes da MPB estarão no Feito em São
+                Paulo.
+            </p>
+            <p class="shadow" data-anime="left">
+                Em breve mais informações
+            </p>
+        </div>
+    </section>
+
+    <!-- Participantes -->
+    <section class="participantes" id="participantes">
+        <div class="box-participantes">
+            <h2>Participantes</h2>
+            <p class="shadow" data-anime="right">
+                Quer saber quem vai representar a sua região? Confira:
+            </p>
+            <p class="shadow" data-anime="right">
+                Em breve mais informações
+            </p>
+        </div>
+    </section>
+
+    <!-- Chefs -->
+    <section class="chefs" id="chefs">
+        <div class="box-chefs">
+            <h2>Chefs</h2>
+            <p class="box-chefs-p shadow" data-anime="top">
+                Aprenda técnicas e receitas com produtos regionais com os maiores chefs do Brasil.
+            </p>
+            <!-- <div class="card-chefs">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">02/10</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Desativado</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Título especial</h5>
+                        <img src="..." alt="..." class="img-thumbnail">
+                        <p class="card-text">Com suporte a texto embaixo, que funciona como uma introdução a um conteúdo
+                            adicional.</p>
+                        <a href="#" class="btn btn-primary">Click</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Inscrição -->
+    <section class="inscricao" id="inscricao">
+        <div class="box-inscricao">
+            <h2>Inscrição</h2>
+            <p data-anime="bottom" class="shadow">
+                Quer mostrar para todo o Brasil o que a sua cozinha tem de melhor? Inscreva-se já.
+            </p>
+        </div>
+        <div class="row forms">
+            <div class="form-restaurante">
+                <!-- Botão para acionar modal -->
+                <button type="button" class="btn-form1 btn btn-primary" data-toggle="modal" data-target="#modalForm1">
+                    Sou Restaurante
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalForm1" tabindex="-1" role="dialog"
+                    aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="TituloModalCentralizado">Sou Restaurante
+                                    <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Importante: o estabelecimento deve ter licença da vigilância sanitária.">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                    </span>
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form novalidate class="needs-validation" action="" name="contato" method="POST"
+                                    data-netlify="true">
+                                    <div class="mb-3">
+                                        <label for="inputMacrorregiao">Macrorregião:</label>
+                                        <input type="text" name="macrorregiao" class="form-control" id="inputMacrorregiao"
+                                            placeholder="" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputCidadeMacrorregiao">Cidade da Macrorregião:</label>
+                                        <input type="text" name="cidadeMacrorregiao" class="form-control" id="inputCidadeMacrorregiao"
+                                            placeholder="" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputNome">Nome:</label>
+                                        <input type="text" name="nome" class="form-control" id="inputNome"
+                                            placeholder="" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail">Email:</label>
+                                        <input type="email" class="form-control" id="inputEmail"
+                                            aria-describedby="emailHelp" placeholder="" name="email-contato" required>
+                                        <div class="valid-feedback">
+                                            Ok!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputTel">Telefone/Celular:</label>
+                                        <input type="tel" name="telefone" class="form-control" id="inputTel"
+                                            placeholder="" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputNomeEstabelecimento">Nome do estabelecimento:</label>
+                                        <input type="text" name="nome-estabelecimento" class="form-control"
+                                            id="inputNomeEstabelecimento" placeholder="" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputEnderecoEstabelecimento">Endereço do estabelcimento:</label>
+                                        <input type="text" name="endereco-estabelcimento" class="form-control"
+                                            id="inputEnderecoEstabelecimento" placeholder="" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputDataNascimento">Data de Nascimento:</label>
+                                        <input type="date" name="dataNascimento" class="form-control"
+                                            id="inputDataNascimento" placeholder="dd/mm/aaaaa" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputCNPJ">CNPJ:</label>
+                                        <input type="text" name="cnpj" class="form-control" id="inputCNPJ"
+                                            placeholder="" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputNome">Nome do prato:</label>
+                                        <input type="text" name="nome-prato" class="form-control" id="inputNome"
+                                            placeholder="" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputReceita">Receita:</label>
+                                        <textarea class="form-control" id="inputReceita" rows="3"
+                                            name="receita"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputReceita">Modo de preparo:</label>
+                                            <textarea class="form-control" id="inputReceita" rows="3"
+                                            name="receita" required></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputDescricaoPrato">Descrição do prato:</label>
+                                            <textarea class="form-control" id="inputDescricaoPrato" rows="3"
+                                            name="receita" required></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputDefesa">Defesa do prato ou produto:
+                                                <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Relate sua história, como foi criado ou aprendeu a fazê-lo e porque ele é importante para sua cidade/região.">
+                                                    <i class="fas fa-exclamation-circle"></i>
+                                                </span>
+                                            </label>
+                                            <textarea class="form-control" id="inputDefesa" rows="3"
+                                            name="mensagem-defesa-prato-produto" required></textarea>
+                                    </div>
+                                    <label class="title-fold" for="inputFile1">Foto do Prato:</label>
+                                    <div class="mb-3 custom-file">
+                                        <label for="inputFile1" class="custom-file-label" name="arquivo1">
+                                            <span class="file-name" id="filename1">
+                                            </span>
+                                            <!-- Nenhum arquivo selecionado... -->
+                                            <input type="file" name="arquivo-contato1" class="custom-file-input"
+                                                id="inputFile1" required>
+                                        </label>
+                                        <div class="invalid-feedback">Arquivo invalido, tente novamente.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputRegulamentoDownload">Regulamento
+                                        </label>
+                                        <button type="button" class="btn-regulamento btn btn-primary">
+                                            <a target="_blank" href="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/09/Regulamento-Feito-em-SP.pdf" download="Regulamento feito em SP 2019">Download Regulamento</a>
+                                        </button>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            name="checkbox-contato" id="inputCheck" required>
+                                        <label for="inputCheck" class="form-check-label">
+                                            Li e concordo com o regulamento.
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            Você deve ler o regulamento e preencher seus dados antes de enviar.
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-produtor">
+                <!-- Botão para acionar modal -->
+                <button type="button" class="btn-form2 btn btn-primary" data-toggle="modal" data-target="#modalForm2">
+                    Sou Produtor
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalForm2" tabindex="-1" role="dialog"
+                    aria-labelledby="TituloModalCentralizado2" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="TituloModalCentralizado2">Sou Produtor
+                                    <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Importante: os produtos devem ser processados ou manufaturados, artesanais ou não, respeitando as boas práticas de fabricação, contendo as devidas certificações de inspeção.">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                    </span>
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form novalidate class="needs-validation" action="" name="contato2" method="POST"
+                                    data-netlify="true">
+                                    <div class="mb-3">
+                                        <label for="inputMacrorregiao2">Macrorregião:</label>
+                                        <input type="text" name="macrorregiao2" class="form-control" id="inputMacrorregiao2"
+                                            placeholder="" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputCidadeMacrorregiao2">Cidade da Macrorregião:</label>
+                                        <input type="text" name="cidadeMacrorregiao2" class="form-control" id="inputCidadeMacrorregiao2"
+                                            placeholder="" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputNome2">Nome:</label>
+                                        <input type="text" name="nome2" class="form-control" id="inputNome2"
+                                            placeholder="" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputEmail2">Email:</label>
+                                        <input type="email" class="form-control" id="inputEmail2"
+                                            aria-describedby="emailHelp" placeholder="" name="email-contato2" required>
+                                        <div class="valid-feedback">
+                                            Ok!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputTel2">Telefone/Celular:</label>
+                                        <input type="tel" name="telefone2" class="form-control" id="inputTel2"
+                                            placeholder="" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <!-- <div class="mb-3">
+                                        <label for="inputEnderecoResidencial2">Endereço da residência:</label>
+                                        <input type="text" name="endereco-residencial2" class="form-control"
+                                            id="inputEnderecoResidencial2" placeholder="" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div> -->
+                                    <div class="mb-3">
+                                        <label for="inputEnderecoEstabelecimento2">Endereço do estabelcimento:</label>
+                                        <input type="text" name="endereco-estabelcimento2" class="form-control"
+                                            id="inputEnderecoEstabelecimento2" placeholder="" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputDataNascimento2">Data de Nascimento:</label>
+                                        <input type="date" name="data2" class="form-control" id="inputDataNascimento2"
+                                            placeholder="dd/mm/aaaaa" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputCNPJ2">CNPJ:</label>
+                                        <input type="number" name="cnpj2" class="form-control" id="inputCNPJ2"
+                                            placeholder="" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="inputNomeProduto">Nome do produto:</label>
+                                        <input type="text" name="produto" class="form-control" id="inputNomeProduto"
+                                            placeholder="" value="" required>
+                                        <div class="valid-feedback">
+                                            Parece bom!
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputFabricacao">Fabricação:</label>
+                                        <textarea class="form-control" id="inputFabricacao" rows="3"
+                                            name="fabricacao" required></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputDecricaoProduto">Descrição do produto:</label>
+                                        <textarea class="form-control" id="inputDecricaoProduto" rows="3"
+                                            name="decricaoProduto" required></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputDefesa2">Defesa do prato ou produto:
+                                            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Relate sua história, como foi criado ou aprendeu a fazê-lo e porque ele é importante para sua cidade/região.">
+                                                <i class="fas fa-exclamation-circle"></i>
+                                            </span>
+                                        </label>
+                                        <textarea class="form-control" id="inputDefesa2" rows="3"
+                                            name="mensagem-defesa-prato-produto" required></textarea>
+                                    </div>
+                                    <label class="title-fold" for="inputFile2">Foto do Produto:</label>
+                                    <div class="mb-3 custom-file">
+                                        <label for="inputFile2" class="custom-file-label" name="arquivo2">
+                                            <span class="file-name" id="filename2">
+                                            </span>
+                                            <!-- Nenhum arquivo selecionado... -->
+                                            <input type="file" name="arquivo-contato2" class="custom-file-input"
+                                                id="inputFile2" required>
+                                        </label>
+                                        <div class="invalid-feedback">Arquivo invalido, tente novamente.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputRegulamentoDownload2">Regulamento
+                                        </label>
+                                        <button type="button" class="btn-regulamento btn btn-primary">
+                                            <a target="_blank" href="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/09/Regulamento-Feito-em-SP.pdf" download="Regulamento feito em SP 2019">Download Regulamento</a>
+                                        </button>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input class="form-check-input" type="checkbox" value=""
+                                            name="checkbox-contato2" id="inputCheck2" required>
+                                        <label for="inputCheck2" class="form-check-label">
+                                            Li e concordo com o regulamento.
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            Você deve ler o regulamento e preencher seus dados antes de enviar.
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <h5>
+                Redes Sociais:
+            </h5>
+            <div class="row">
+                <div class="social-icon-box col-sm-2">
+                    <a href="https://www.facebook.com/prazeresdamesa" target="_blank">
+                        <img src="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/facebook-circular.svg"
+                            alt="Facebook" class="social-icon" />
+                    </a>
+                </div>
+                <div class="social-icon-box col-sm-2">
+                    <a href="https://www.instagram.com/prazeresdamesa/" target="_blank">
+                        <img src="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/instagram-circular.svg"
+                            alt="Instagram" class="social-icon" />
+                    </a>
+                </div>
+                <div class="social-icon-box col-sm-2">
+                    <a href="https://twitter.com/prazeresdamesa" target="_blank">
+                        <img src="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/twitter-circular.svg"
+                            alt="Twitter" class="social-icon" />
+                    </a>
+                </div>
+                <div class="social-icon-box col-sm-2">
+                    <a href="https://www.youtube.com/channel/UCq9WnyF9HTPsMJ-Khwr1c0A" target="_blank">
+                        <img src="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/youtube-circular.svg"
+                            alt="Youtube" class="social-icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="">
+            <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fprazeresdamesa&layout=button&size=large&width=117&height=28&appId" 
+            width="117" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        </div> -->
+    </section>
+    <footer>
+        <div class="assinatura">
+            <p>
+                Desenvolvido por: Prazeres da Mesa
+            </p>
+        </div>
+    </footer>
+</body>
+<script>
+    // function navegarViaAjax(url, seletor){
+    //     if(!url || !seletor) return
+    //     const elemento = document.querySelector(seletor)
+    //     fetch(url)
+    //         .then(resp => resp.text())
+    //         .then(html => {
+    //             elemento.innerHTML = html
+    //         })
+    // }
+    // document.querySelectorAll('[wm-link]').forEach(link =>{
+    //     const url = link.attributes['wm-link'].value
+    //     const seletorDestino = link.attributes['wm-destino'].value
+
+    //     // window.onload.navegarViaAjax('.menu-gov')
+    //     window.onload.navegarViaAjax()
+    // })
+
+</script>
+<script src="./js/scroll-animate.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/form.js"></script>
+
+</html>
